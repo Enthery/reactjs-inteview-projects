@@ -1,40 +1,40 @@
 .wrapper {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
 .wrapper button {
-    background: plum;
-    color: white;
-    padding: 10px 20px;
-    font-weight: bold;
-    font-size: 20px;
-    cursor: pointer;
+  background: plum;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .accordion {
-    width: 500px;
+  width: 500px;
 }
 
 .item {
-    background-color: plum;
-    margin-bottom: 10px;
-    padding: 10px 20px;
+  background-color: plum;
+  margin-bottom: 10px;
+  padding: 10px 20px;
 }
 
 .title {
-    color: white;
-    cursor: pointer;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
+  color: white;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
 }
 
 .content {
-    height: auto;
-    color: white;
+  height: auto;
+  color: white;
 }
