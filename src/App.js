@@ -3,6 +3,7 @@ import Accordion from "./components/accordian";
 import Modal from "./components/custom-modal-popup/modal";
 import ModalTest from "./components/custom-modal-popup/modal-test";
 import TabsComponent from "./components/custom-tabs/tab-test";
+import GithubProfileFinder from "./components/github-profile-finder";
 import ImageSlider from "./components/image-slider";
 import LightDarkMode from "./components/light-dark-mode/light-dark-mode";
 import LoadingMoreData from "./components/load-more-data";
@@ -51,7 +52,10 @@ function App() {
       {/* <TabsComponent /> */}
 
       {/* Custom open modal component  */}
-      <ModalTest />
+      {/* <ModalTest /> */}
+
+      {/* Github Profile Finder */}
+      <GithubProfileFinder />
     </div>
   );
 }
