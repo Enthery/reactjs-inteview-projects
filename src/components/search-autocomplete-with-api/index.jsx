@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import SuggestionS from "./suggestions";
 
 export default function SearchAutocomplete() {
   const [loading, setLoading] = useState(false);
@@ -22,6 +23,13 @@ export default function SearchAutocomplete() {
     } else {
       setShowDropDown(false);
     }
+  }
+
+  function handleClick(event) {
+    console.log(event.target.innerText);
+    setShowDropDown(false);
+    setSearchParam(event.target.innerText);
+    setFilteredUsers([]);
   }
 
   async function fetchListOfUsers() {
@@ -50,13 +58,20 @@ export default function SearchAutocomplete() {
   console.log(users, filteredUsers);
 
   return (
-    <div className="search-autocomplete">
-      <input
-        value={searchParam}
-        type="search"
-        placeholder="Please Search Name"
-        onChange={handleChange}
-      />
+    <div className="search-autocomplete-container">
+      {loading ? (
+        <li>Loading Data ! Please wait.</li>
+      ) : (
+        <input
+          value={searchParam}
+          name="search-users"
+          placeholder="Please Search Name"
+          onChange={handleChange}
+        />
+      )}
+      {showDropDown && (
+        <SuggestionS handleClick={handleClick} data={filteredUsers} />
+      )}
     </div>
   );
 }
