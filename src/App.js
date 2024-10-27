@@ -3,6 +3,8 @@ import Accordion from "./components/accordian";
 import Modal from "./components/custom-modal-popup/modal";
 import ModalTest from "./components/custom-modal-popup/modal-test";
 import TabsComponent from "./components/custom-tabs/tab-test";
+import FeatureFlags from "./components/feature-flag";
+import FeatureFlagGlobalState from "./components/feature-flag/context";
 import GithubProfileFinder from "./components/github-profile-finder";
 import ImageSlider from "./components/image-slider";
 import LightDarkMode from "./components/light-dark-mode/light-dark-mode";
@@ -63,7 +65,12 @@ function App() {
       {/* <SearchAutocomplete /> */}
 
       {/* Tic Tac Toe */}
-      <TicTacToe />
+      {/* <TicTacToe /> */}
+
+      {/* Feature Flag Component  */}
+      <FeatureFlagGlobalState>
+        <FeatureFlags />
+      </FeatureFlagGlobalState>
     </div>
   );
 }
