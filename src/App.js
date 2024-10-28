@@ -13,6 +13,7 @@ import QRCodeGenerator from "./components/qr-code-generator";
 import RandomColor from "./components/random-color";
 import ScrollIndicator from "./components/scroll-indicator";
 import ScrollTopAndBottom from "./components/scroll-to-top-and-bottom";
+import ScrollToSection from "./components/scroll-to-top-and-bottom/scroll-to-section";
 import SearchAutocomplete from "./components/search-autocomplete-with-api";
 import StarRating from "./components/star-rating";
 import TicTacToe from "./components/tic-tact-toe";
@@ -86,7 +87,10 @@ function App() {
       {/* <UseWindowResizeTest /> */}
 
       {/* Scroll to Top and Bottom */}
-      <ScrollTopAndBottom />
+      {/* <ScrollTopAndBottom /> */}
+
+      {/* Scroll to a Particular section */}
+      <ScrollToSection />
     </div>
   );
 }
