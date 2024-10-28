@@ -19,6 +19,7 @@ import TreeView from "./components/tree-view";
 import menus from "./components/tree-view/data";
 import UseFetchCustomHookTest from "./components/use-fetch/test";
 import UseOnclickOutsideTest from "./components/use-outside-click/test";
+import UseWindowResizeTest from "./components/use-window-resize/test";
 
 function App() {
   return (
@@ -78,7 +79,10 @@ function App() {
       {/* <UseFetchCustomHookTest /> */}
 
       {/* Use on click outside test */}
-      <UseOnclickOutsideTest />
+      {/* <UseOnclickOutsideTest /> */}
+
+      {/* Use Window Resize Hook Test */}
+      <UseWindowResizeTest />
     </div>
   );
 }
