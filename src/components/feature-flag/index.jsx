@@ -6,7 +6,6 @@ import TicTacToe from "../tic-tact-toe";
 import TreeView from "../tree-view";
 import { FeatureFlagsContext } from "./context";
 import menus from "../tree-view/data";
-import Tabs from "../custom-tabs/tabs";
 import TabsComponent from "../custom-tabs/tab-test";
 
 export default function FeatureFlags() {
